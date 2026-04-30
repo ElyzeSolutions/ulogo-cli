@@ -3,7 +3,7 @@ name: publish-npm
 on:
   push:
     tags:
-      - "elyzesolutions-ulogo-v*"
+      - "ulogo-cli-v*"
 
 permissions:
   contents: read
@@ -40,7 +40,7 @@ jobs:
       - name: Verify release tag
         run: |
           VERSION="$(node -p "require('./package.json').version")"
-          EXPECTED="elyzesolutions-ulogo-v${VERSION}"
+          EXPECTED="ulogo-cli-v${VERSION}"
           if [ "${GITHUB_REF_NAME}" != "${EXPECTED}" ]; then
             echo "Release tag must be ${EXPECTED}; got ${GITHUB_REF_NAME}" >&2
             exit 1

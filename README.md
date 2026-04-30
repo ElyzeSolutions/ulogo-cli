@@ -1,4 +1,4 @@
-# @elyzesolutions/ulogo
+# ulogo-cli
 
 Command-line client for the ulogo.it Developer API.
 
@@ -8,7 +8,7 @@ depend on private web app session endpoints.
 ## Install
 
 ```bash
-npm install -g @elyzesolutions/ulogo
+npm install -g ulogo-cli
 ```
 
 ## Use

@@ -1,5 +1,5 @@
 {
-  "name": "@elyzesolutions/ulogo",
+  "name": "ulogo-cli",
   "version": "0.1.4",
   "description": "Command-line client for the ulogo.it Developer API.",
   "type": "module",
@@ -39,7 +39,6 @@
     "prepack": "pnpm build"
   },
   "publishConfig": {
-    "access": "public",
     "registry": "https://registry.npmjs.org",
     "provenance": true
   },

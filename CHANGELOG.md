@@ -5,6 +5,7 @@
 - Move the CLI source and npm trusted publishing workflow to the public
   `ElyzeSolutions/ulogo-cli` repository.
 - Restore npm provenance publishing now that the source repository is public.
+- Rename the npm package to `ulogo-cli`; the installed command remains `ulogo`.
 
 ## 0.1.3
 
