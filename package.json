@@ -1,0 +1,57 @@
+{
+  "name": "@elyzesolutions/ulogo",
+  "version": "0.1.4",
+  "description": "Command-line client for the ulogo.it Developer API.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://ulogo.it/docs/developer/api-cli",
+  "bugs": {
+    "url": "https://github.com/ElyzeSolutions/ulogo-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElyzeSolutions/ulogo-cli.git"
+  },
+  "keywords": [
+    "ulogo",
+    "logo",
+    "brand-assets",
+    "cli",
+    "developer-tools"
+  ],
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "bin": {
+    "ulogo": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && node -e \"const fs=require('fs'); fs.chmodSync('dist/index.js', 0o755)\"",
+    "lint": "eslint src --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run src",
+    "prepack": "pnpm build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org",
+    "provenance": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@types/node": "25.6.0",
+    "eslint": "9.39.4",
+    "globals": "17.5.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.59.0",
+    "vitest": "4.1.4"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
