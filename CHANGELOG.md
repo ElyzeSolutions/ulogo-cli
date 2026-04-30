@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- Publish the first trusted-publishing release for `ulogo-cli`.
+
 ## 0.1.4
 
 - Move the CLI source and npm trusted publishing workflow to the public
