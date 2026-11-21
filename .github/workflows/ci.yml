@@ -17,11 +17,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: pnpm/action-setup@v6
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22.14.0
           cache: pnpm
@@ -42,4 +42,4 @@ jobs:
         run: pnpm build
 
       - name: Check package contents
-        run: npm publish --dry-run --access public --provenance=false
+        run: npm pack --dry-run
