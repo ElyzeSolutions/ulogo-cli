@@ -42,4 +42,4 @@ jobs:
         run: pnpm build
 
       - name: Check package contents
-        run: npm publish --dry-run --access public --provenance=false
+        run: npm pack --dry-run
